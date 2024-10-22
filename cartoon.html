@@ -10,11 +10,6 @@
             justify-content: space-between;
             padding: 20px;
         }
-        video {
-            width: 150%; /* 设置视频宽度为100% */
-            max-width: 600px; /* 设置最大宽度 */
-            height: 150%; /* 自动调整高度以保持比例 */
-        }
         .video-title {
             text-align: center; /* 中心对齐标题 */
             margin-top: 10px; /* 顶部间距 */
@@ -25,10 +20,15 @@
 </head>
 <body>
     <div>
-        <video controls>
-             <iframe src="https://www.bilibili.com/video/BV1kx1RYCEE8/?spm_id_from=333.337.search-card.all.click&vd_source=12143166a5c382a24b91d4662882a442" frameborder="0" allowfullscreen></iframe>
-            您的浏览器不支持视频标签。
-        </video>
+        <iframe src="//player.bilibili.com/player.html?bvid=BV1kx1RYCEE8&high_quality=1" 
+                scrolling="no" 
+                border="0" 
+                frameborder="no" 
+                framespacing="0" 
+                allowfullscreen="true" 
+                width="640" 
+                height="480"> 
+        </iframe>
         <p class="video-title">假面骑士</p> <!-- 添加标题 -->
     </div>
     
