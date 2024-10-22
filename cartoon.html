@@ -13,19 +13,31 @@
         video {
             width: 45%; /* 设置视频宽度 */
         }
+        .video-title {
+            text-align: center; /* 中心对齐标题 */
+            margin-top: 10px; /* 顶部间距 */
+            font-size: 18px; /* 字体大小 */
+            font-weight: bold; /* 加粗字体 */
+        }
     </style>
 </head>
 <body>
-    <video controls>
-        <p>假面骑士</p>
-        <source src="https://example.com/path/to/your/video1.mp4" type="video/mp4">
-        您的浏览器不支持视频标签。
-    </video>
-    <video controls>
-        <p>宝可梦</p>
-        <source src="https://example.com/path/to/your/video2.mp4" type="video/mp4">
-        您的浏览器不支持视频标签。
-    </video>
+    <div>
+        <video controls>
+            <source src="https://example.com/path/to/your/video1.mp4" type="video/mp4">
+            您的浏览器不支持视频标签。
+        </video>
+        <p class="video-title">假面骑士</p> <!-- 添加标题 -->
+    </div>
+    
+    <div>
+        <video controls>
+            <source src="https://example.com/path/to/your/video2.mp4" type="video/mp4">
+            您的浏览器不支持视频标签。
+        </video>
+        <p class="video-title">宝可梦</p> <!-- 添加标题 -->
+    </div>
+
     <div>
         <a href="index.html" class="back">返回主页</a>
     </div>
