@@ -5,9 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ma yuechi web</title>
     <style>
-        body { font-family: Arial, sans-serif; }
+        body {
+            font-family: Arial, sans-serif;
+             background-image: url('R.jpg'); /* 将背景图片设置为 R.jpg */
+            background-repeat: no-repeat;
+            background-size: cover; /* 使背景图片覆盖整个页面 */
+            margin: 0; /* 去除默认边距 */
+            height: 100vh; /* 设置高度为视口高度 */
+        }
         nav { margin-bottom: 20px; }
-        img { max-width: 100%; height: auto; }
+        img { max-width: 100%; height: auto; position: absolute; } /* 使图片绝对定位 */
+        #left-image {
+            left: 0; 
+            bottom: 0; /* 左下角 */
+        }
+        #right-image {
+            right: 0; 
+            bottom: 0; /* 右下角 */
+        }
+        #bottom-image {
+            left: 50%; 
+            bottom: 0; 
+            transform: translateX(-50%); /* 中间位置 */
+        }
+        .contain {
+            text-align: center; /* 中心对齐内容 */
+            position: relative; /* 为绝对定位的子元素提供参考 */
+        }
     </style>
 </head>
 <body>
@@ -19,8 +43,8 @@
             <a href="game.html" class="game">Game</a>  
         </div>  
     </div>  
-    <img id="left-image" src="BM.png"  width="150" height="150" alt="Left Image">  
-    <img id="right-image" src="Lucario.png"  width="150" height="150" alt="Right Image">  
-    <img id="bottom-image" src="tifa.jpg"  width="150" height="150" alt="Bottom Image">  
+    <img id="left-image" src="BM.png" width="150" height="150" alt="Left Image">  
+    <img id="right-image" src="Lucario.png" width="150" height="150" alt="Right Image">  
+    <img id="bottom-image" src="tifa.jpg" width="150" height="150" alt="Bottom Image">  
 </body>  
 </html>
