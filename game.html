@@ -1,45 +1,58 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartoon</title>
     <style>
         body {
+            background-image: url('https://example.com/anime-background.jpg'); /* 替换为你喜欢的动漫背景图片URL */
+            background-size: cover;
+            background-repeat: no-repeat;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-between; /* 使两个视频左右对齐 */
+            align-items: flex-start;
             padding: 20px;
+            font-family: Arial, sans-serif;
+            color: white; /* 使文本在深色背景上可见 */
         }
-        video {
-            width: 45%; /* 设置视频宽度 */
+        .video-container {
+            width: 48%; /* 每个视频容器宽度为页面宽度的一半 */
+            background: rgba(0, 0, 0, 0.5); /* 半透明背景使得视频标题更易读 */
+            padding: 10px;
+            border-radius: 10px;
         }
         .video-title {
-            text-align: center; /* 中心对齐标题 */
-            margin-top: 10px; /* 顶部间距 */
-            font-size: 18px; /* 字体大小 */
-            font-weight: bold; /* 加粗字体 */
+            text-align: center;
+            margin-top: 10px;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
-    <div>
-        <video controls>
-            <source src="https://www.bilibili.com/video/BV1rh4y1n77f/?spm_id_from=333.337.search-card.all.click&vd_source=12143166a5c382a24b91d4662882a442">
-            您的浏览器不支持视频标签。
-        </video>
-        <p class="video-title">崩坏星穹铁道</p> <!-- 添加标题 -->
-    </div>
-    
-    <div>
-        <video controls>
-            <source src="https://www.bilibili.com/video/BV1oW411D7Yz/?spm_id_from=333.337.search-card.all.click&vd_source=12143166a5c382a24b91d4662882a442" type="video/mp4">
-            您的浏览器不支持视频标签。
-        </video>
-        <p class="video-title">war thunder</p> <!-- 添加标题 -->
+    <div class="video-container">
+        <iframe src="//player.bilibili.com/player.html?bvid=BV1rh4y1n77f"
+                scrolling="no"
+                border="0"
+                frameborder="no"
+                framespacing="0"
+                allowfullscreen="true"
+                width="100%"
+                height="360"> 
+        </iframe>
+        <p class="video-title">Honkai: Star Rail</p>
     </div>
 
-    <div>
-        <a href="index.html" class="back">返回主页</a>
+    <div class="video-container">
+        <iframe src="//player.bilibili.com/player.html?bvid=BV1oW411D7Yz"
+                scrolling="no"
+                border="0"
+                frameborder="no"
+                framespacing="0"
+                allowfullscreen="true"
+                width="100%"
+                height="360"> 
+        </iframe>
+        <p class="video-title">War Thunder</p>
     </div>
 </body>
 </html>
