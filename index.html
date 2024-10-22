@@ -7,44 +7,42 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-             background-image: url('R.jpg'); /* 将背景图片设置为 R.jpg */
+            background-image: url('R.jpg'); /* 将背景图片设置为 R.jpg */
             background-repeat: no-repeat;
             background-size: cover; /* 使背景图片覆盖整个页面 */
             margin: 0; /* 去除默认边距 */
             height: 100vh; /* 设置高度为视口高度 */
+            display: flex;
+            flex-direction: column; /* 垂直排列内容 */
+            align-items: center; /* 水平居中 */
+            justify-content: center; /* 垂直居中 */
         }
         nav { margin-bottom: 20px; }
-        img { max-width: 100%; height: auto; position: absolute; } /* 使图片绝对定位 */
-        #left-image {
-            left: 0; 
-            bottom: 0; /* 左下角 */
-        }
-        #right-image {
-            right: 0; 
-            bottom: 0; /* 右下角 */
-        }
-        #bottom-image {
-            left: 50%; 
-            bottom: 0; 
-            transform: translateX(-50%); /* 中间位置 */
+        img { max-width: 100%; height: auto; } /* 使图片自适应宽度 */
+        .image-container {
+            display: flex;
+            justify-content: space-between; /* 图片之间均匀分布 */
+            width: 80%; /* 容器占页面宽度的80% */
+            margin-top: 20px;
         }
         .contain {
             text-align: center; /* 中心对齐内容 */
-            position: relative; /* 为绝对定位的子元素提供参考 */
         }
     </style>
 </head>
 <body>
-    <div class="contain">  
-        <h1>the hobby of Mayuechi</h1>  
-        <div class="options">  
-            <a href="https://crazykdi.github.io/" class="home">Home</a>  
-            <a href="cartoon.html" class="cartoon">Cartoon</a>  
-            <a href="game.html" class="game">Game</a>  
-        </div>  
-    </div>  
-    <img id="left-image" src="BM.png" width="150" height="150" alt="Left Image">  
-    <img id="right-image" src="Lucario.png" width="150" height="150" alt="Right Image">  
-    <img id="bottom-image" src="tifa.jpg" width="150" height="150" alt="Bottom Image">  
-</body>  
+    <div class="contain">
+        <h1>the hobby of Mayuechi</h1>
+        <div class="options">
+            <a href="https://crazykdi.github.io/" class="home">Home</a>
+            <a href="cartoon.html" class="cartoon">Cartoon</a>
+            <a href="game.html" class="game">Game</a>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="BM.png" width="100" height="100" alt="Left Image">
+        <img src="tifa.jpg" width="100" height="100" alt="Bottom Image">
+        <img src="Lucario.png" width="100" height="100" alt="Right Image">
+    </div>
+</body>
 </html>
