@@ -11,7 +11,9 @@
             padding: 20px;
         }
         video {
-            width: 45%; /* 设置视频宽度 */
+            width: 100%; /* 设置视频宽度为100% */
+            max-width: 600px; /* 设置最大宽度 */
+            height: auto; /* 自动调整高度以保持比例 */
         }
         .video-title {
             text-align: center; /* 中心对齐标题 */
@@ -24,7 +26,7 @@
 <body>
     <div>
         <video controls>
-            <source src="https://example.com/path/to/your/video1.mp4" type="video/mp4">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
             您的浏览器不支持视频标签。
         </video>
         <p class="video-title">假面骑士</p> <!-- 添加标题 -->
@@ -32,7 +34,7 @@
     
     <div>
         <video controls>
-            <source src="https://example.com/path/to/your/video2.mp4" type="video/mp4">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
             您的浏览器不支持视频标签。
         </video>
         <p class="video-title">宝可梦</p> <!-- 添加标题 -->
