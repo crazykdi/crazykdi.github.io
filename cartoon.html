@@ -1,47 +1,58 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartoon</title>
     <style>
         body {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-between; /* 使两个视频左右对齐 */
+            align-items: flex-start;
             padding: 20px;
+            font-family: Arial, sans-serif;
+            background-image: url('https://example.com/your-background-image.jpg'); /* 替换为实际的背景图片URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .video-container {
+            width: 48%; /* 每个视频容器宽度为页面宽度的一半 */
+            background: rgba(255, 255, 255, 0.8); /* 半透明白色背景，以便在背景图上更清晰 */
+            padding: 10px;
+            border-radius: 10px;
         }
         .video-title {
-            text-align: center; /* 中心对齐标题 */
-            margin-top: 10px; /* 顶部间距 */
-            font-size: 18px; /* 字体大小 */
-            font-weight: bold; /* 加粗字体 */
+            text-align: center;
+            margin-top: 10px;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
-    <div>
-        <iframe src="//player.bilibili.com/player.html?bvid=BV1kx1RYCEE8&high_quality=1" 
-                scrolling="no" 
-                border="0" 
-                frameborder="no" 
-                framespacing="0" 
-                allowfullscreen="true" 
-                width="640" 
-                height="480"> 
+    <div class="video-container">
+        <iframe src="//player.bilibili.com/player.html?bvid=BV1kx1RYCEE8"
+                scrolling="no"
+                border="0"
+                frameborder="no"
+                framespacing="0"
+                allowfullscreen="true"
+                width="100%"
+                height="360"> 
         </iframe>
-        <p class="video-title">假面骑士</p> <!-- 添加标题 -->
-    </div>
-    
-    <div>
-        <video controls>
-             <iframe src="//https://www.bilibili.com/video/BV12t4y1P7sX/?spm_id_from=333.337.search-card.all.click&vd_source=12143166a5c382a24b91d4662882a442" frameborder="0" allowfullscreen></iframe>
-            您的浏览器不支持视频标签。
-        </video>
-        <p class="video-title">宝可梦</p> <!-- 添加标题 -->
+        <p class="video-title">假面骑士</p>
     </div>
 
-    <div>
-        <a href="index.html" class="back">返回主页</a>
+    <div class="video-container">
+        <iframe src="//player.bilibili.com/player.html?bvid=BV12t4y1P7sX"
+                scrolling="no"
+                border="0"
+                frameborder="no"
+                framespacing="0"
+                allowfullscreen="true"
+                width="100%"
+                height="360"> 
+        </iframe>
+        <p class="video-title">宝可梦</p>
     </div>
 </body>
 </html>
