@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma yuechi web</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        nav { margin-bottom: 20px; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="contain">  
+        <h1>the hobby od Mayuechi</h1>  
+        <div class="options">  
+            <a href="home.html" class="home">Home</a>  
+            <a href="cartoon.html" class="cartoon">Hobby</a>  
+            <a href="game-server.html" class="game-server">Game server link</a>  
+        </div>  
+    </div>  
+    <img id="left-image" src="left-image.jpg" alt="Left Image">  
+    <img id="right-image" src="right-image.jpg" alt="Right Image">  
+    <img id="bottom-image" src="bottom-image.jpg" alt="Bottom Image">  
+</body>  
+</html>
