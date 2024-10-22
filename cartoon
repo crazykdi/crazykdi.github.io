@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoon</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        video {
+            width: 45%; /* 设置视频宽度 */
+        }
+    </style>
+</head>
+<body>
+    <video controls>
+          <p>假面骑士</p>
+        <source src="https://www.bilibili.com/video/BV1Mj411H7Dc/?spm_id_from=333.337.search-card.all.click.mp4" type="video/mp4">
+        您的浏览器不支持视频标签。
+    </video>
+    <video controls>
+          <p>宝可梦</p>
+        <source src="https://www.bilibili.com/video/BV12t4y1P7sX/?spm_id_from=333.337.search-card.all.click.mp4" type="video/mp4">
+        您的浏览器不支持视频标签。
+    </video>
+</body>
+</html>
